@@ -1,3 +1,5 @@
+# Homework 1
+
 Review the material in Lectures 1 and 2 and read the No Silver Bullet article available on the class's GitHub repo. Based on that review and your own experience, answer the questions below.
 
 1. Define the term essential difficulties as it is used by Brooks. Provide background and context with your answer and at least one example of an essential difficulty.
