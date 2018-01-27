@@ -25,6 +25,7 @@ The four properties of essential difficulties are: complexity, conformity, chang
 Here, a silver bullet refers to a single development in software engineering technology that results in 10 fold increase in efficiency, reliability, or simplicity. Brooks believes that most developments in software engineering are to reduce accidental difficulties. (Though he proposes developments which may reduce essential difficulties.) And therefore, to reduce system complexity by an order of magnitude, 
 - (a) it would need to be the case that these accidental difficulties consitute a large fraction of software development, and further, 
 - (b) that a single technique would reduce the majority of these accidental difficulties. 
+
 Brooks believes neither (a) or (b) to be the case: that essential difficulties generate a not-insignificant contribution, and because each new development is prone to new bugs, it's likely that no single tool will work across the board.
 
 > 5. In lecture, software engineering's relationship to computer science was described by analogy by discussing the differences between a chemist (chemistry) and a chemical engineer (chemical engineering). Define software engineering and its relationship to computer science; make use of the chemist vs. chemical engineer analogy when answering this question.
