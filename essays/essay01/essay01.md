@@ -12,7 +12,7 @@ And even though, it is [almost 50 years old](https://dl.acm.org/citation.cfm?doi
 
 [Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). Using the language of records, attributes, and relations, operations on relational databases using SQL statements generally follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
 ```SQL
-<SELECT/INSERT/UPDATE/DELETE> ... records ... 
+	<SELECT/INSERT/UPDATE/DELETE> ... records ... 
 	<FROM/INTO/SET> ... relation ... 
 	<VALUES/WHERE> ... attributes ...
 ``` 
@@ -20,6 +20,37 @@ And even though, it is [almost 50 years old](https://dl.acm.org/citation.cfm?doi
 Let's take a deeper dive into four of the common SQL operations:
 
 #### [SELECT](https://en.wikipedia.org/wiki/Select_(SQL))
+
+In order to look at all of the records, and all of their attributes, from a particular table (`relation`), your SQL statement will look something like:
+```SQL
+	SELECT * FROM relation
+``` 
+
+If you have a huge dataset, it would be wise to tack a LIMIT clause to the above statment. For example:
+```SQL
+	SELECT * FROM relation LIMIT 10
+```
+returns the first 10 records from your query results (analogous of `head` on a database).
+
+To query for a particular attribute (`index`), again over all records:
+```SQL
+	SELECT index FROM relation
+``` 
+
+If you'd like to examine a single record (here, the first), with all of its attributes, you will use a [WHERE](https://en.wikipedia.org/wiki/Where_(SQL)) clause:
+```SQL
+	SELECT * FROM relation WHERE index = 1
+```
+
+There are many additional optional clauses one can specify to further limit, aggregate or sort the results of a SELECT. Some of these include:
+
+- GROUP BY: aggregate results by a attribute of your records (e.g. group all sales belonging to a single department)
+- [HAVING](https://en.wikipedia.org/wiki/Having_(SQL)): essentially a WHERE clause applied to groups (e.g. filter all sales belonging to a single department, which exceeds $1,000)
+- [ORDER BY](https://en.wikipedia.org/wiki/Order_by): sort results (in ascending order, by default) based on a specific attribute (e.g. return sales sorted by transaction date)
+
+These clauses can be particularly helpful when using [aggregate functions](https://en.wikipedia.org/wiki/Aggregate_function).
+
+Hopefully, after just this discussion of SQL's SELECT statement, I have conveyed some of the power behind SQL - its ability to both generate detailed views of single records, and to build summary statistics for a table 
 
 #### [INSERT](https://en.wikipedia.org/wiki/Insert_(SQL))
 
