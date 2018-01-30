@@ -32,7 +32,7 @@ Let's break this apart further into four of the common SQL operations:
 
 There are several way to get started learning and using SQL. First, the Wikipedia links that I've provided above can be a helpful to understand the basics of relational databases and SQL syntax. Second, below I have provided links for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
 
-Further, you can install your own SQL server locally and get started trying to run these queries. A popular relational database is [MySQL](https://www.mysql.com) ([installation instructions](hhttps://dev.mysql.com/doc/refman/5.7/en/installing.html)).
+Further, you can install your own SQL server locally and get started trying to run these queries. A popular relational database is [MySQL](https://www.mysql.com) ([installation instructions](https://dev.mysql.com/doc/refman/5.7/en/installing.html)).
 
 ### References
 
