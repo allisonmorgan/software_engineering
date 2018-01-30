@@ -1,4 +1,4 @@
-# SQL
+# SQL: Overview
 
 ![Comic](https://imgs.xkcd.com/comics/exploits_of_a_mom.png "Her daughter is named Help I'm trapped in a driver's license factory.")
 
@@ -10,12 +10,13 @@ SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a lang
 
 [Relational databases](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations").
 
-![Example Database](hhttps://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png "Example Database")
+<img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database">
+
 _Example of table, featuring records, attributes, and a relation. ([Reproduction from Wikipedia](https://en.wikipedia.org/wiki/Relational_database))_
 
 ### Syntax
 
-Using the terms from the above table, generally SQL statements [follow](https://en.wikipedia.org/wiki/SQL_syntax) a `SELECT/INSERT/UPDATE/DELETE ... records ... FROM/INTO/SET ... relation ... VALUES/WHERE ... attributes` format. Let's break this apart into four of the common SQL operations:
+Using the terms from the above table, generally SQL statements [follow](https://en.wikipedia.org/wiki/SQL_syntax) a `SELECT/INSERT/UPDATE/DELETE ... records ... FROM/INTO/SET ... relation ... VALUES/WHERE ... attributes ...` format. Let's break this apart into four of the common SQL operations:
 
 #### [SELECT](https://en.wikipedia.org/wiki/Select_(SQL))
 
