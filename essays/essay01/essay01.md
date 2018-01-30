@@ -4,17 +4,13 @@
 
 _XKCD comic featuring SQL humor. Hopefully, by the end of this essay, you will understand the joke! ([Link](https://xkcd.com/327/))_
 
-SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a language for querying, manipulating, inserting, and deleting data within _relational_ databases. The language was introduced in the [1970s](https://dl.acm.org/citation.cfm?doid=362384.362685), and has been widely in use since then. SQL can be used on large data sets, to both aggregate features of several rows, and look at single rows in detail. And even though, SQL is almost 50 years old, [many relational database systems](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) still used today, handle interactions through SQL statements.
-
-### Database Design
-
-[Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). 
-
-<img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database">
+SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a language for querying, manipulating, inserting, and deleting data within _relational_ databases. 
+And even though, it is [almost 50 years old](https://dl.acm.org/citation.cfm?doid=362384.362685), [many relational database systems](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) still used today, handle interactions through SQL statements. In the SQL commands below, I will show how SQL can be used on large data sets, to both aggregate features of several rows, and look at single rows in detail. 
 
 ### Syntax
+<!--img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database"-->
 
-Using the terms from the above table, generally SQL statements follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
+[Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). Using the language of records, attributes, and relations, generally SQL statements follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
 ```
 SELECT/INSERT/UPDATE/DELETE ... records ... 
 	FROM/INTO/SET ... relation ... 
@@ -36,6 +32,8 @@ Let's take a deeper dive into four of the common SQL operations:
 There are several way to get started learning and using SQL. First, the Wikipedia links that I've provided above can be a helpful to understand the basics of relational databases and SQL syntax. Second, below I have provided references for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
 
 Further, you can install your own SQL server locally and get started trying to run these queries. A popular relational database is [MySQL](https://www.mysql.com). Or, if you'd rather test SQL out further before installing, Google and Wikidata host databases, which you can query using SQL statements. 
+
+---
 
 ### References
 
