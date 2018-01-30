@@ -8,11 +8,9 @@ SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a lang
 
 ### Database Design
 
+[Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). 
+
 <img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database">
-
-_Example of [relational database](https://en.wikipedia.org/wiki/Relational_database)_
-
-Relational databases are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). 
 
 ### Syntax
 
@@ -35,9 +33,9 @@ Let's take a deeper dive into four of the common SQL operations:
 
 ### Try it Out!
 
-There are several way to get started learning and using SQL. First, the Wikipedia links that I've provided above can be a helpful to understand the basics of relational databases and SQL syntax. Second, below I have provided links for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
+There are several way to get started learning and using SQL. First, the Wikipedia links that I've provided above can be a helpful to understand the basics of relational databases and SQL syntax. Second, below I have provided references for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
 
-Further, you can install your own SQL server locally and get started trying to run these queries. A popular relational database is [MySQL](https://www.mysql.com) ([installation instructions](https://dev.mysql.com/doc/refman/5.7/en/installing.html)).
+Further, you can install your own SQL server locally and get started trying to run these queries. A popular relational database is [MySQL](https://www.mysql.com). Or, if you'd rather test SQL out further before installing, Google and Wikidata host databases, which you can query using SQL statements. 
 
 ### References
 
