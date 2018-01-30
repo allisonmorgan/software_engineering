@@ -41,6 +41,7 @@ If you'd like to examine a single record (here, the first), with all of its attr
 ```SQL
 SELECT * FROM relation WHERE index = 1
 ```
+(There are [many other operators](https://en.wikipedia.org/wiki/SQL_syntax#Operators) that can be used within SQL statements.)
 
 There are many additional optional clauses one can specify to further limit, aggregate or sort the results of a SELECT. Some of these include:
 
@@ -50,13 +51,48 @@ There are many additional optional clauses one can specify to further limit, agg
 
 These clauses can be particularly helpful when using [aggregate functions](https://en.wikipedia.org/wiki/Aggregate_function).
 
-Hopefully, after just this discussion of SQL's SELECT statement, I have conveyed some of the power behind SQL - its ability to both generate detailed views of single records, and to build summary statistics for a table 
+Hopefully, after just this discussion of SQL's SELECT statement, I have conveyed some of the power behind SQL - its ability to both generate detailed views of single records, and build summary statistics for a dataset. 
 
 #### [INSERT](https://en.wikipedia.org/wiki/Insert_(SQL))
 
+To insert a new record into an existing table (`relation`), you can use an INSERT statement. Consider a table which has two columns, `attribute_1` and `attribute_2`, the statement:
+```SQL
+INSERT INTO relation (attribute_1, attribute_2) VALUES (2, 'red')
+```
+will insert a new record into the table `relation`, with those specified attributes. If I had not specified attribute names above, then the values provided would have matched to the first two attributes of my table `relation`, by default.
+
+To insert more than one record at once:
+```SQL
+INSERT INTO relation (attribute_1, attribute_2) 
+	VALUES (2, 'red')
+	       (3, 'blue')
+```
+
 #### [UPDATE](https://en.wikipedia.org/wiki/Update_(SQL))
 
+If you happen to misdefine a record's attributes, you can use an UPDATE statement to fix it.
+```SQL
+UPDATE relation SET attribute_2 = 'green' WHERE attribute_1 = 3
+```
+
 #### [DELETE](https://en.wikipedia.org/wiki/Delete_(SQL))
+
+To drop a single record from a table:
+```SQL
+DELETE FROM relation WHERE attribute_1 = 3
+```
+
+Similar filters can be applied from the SELECT statements above (like WHERE) to drop more than one record. Furthermore, to drop all records from a table:
+```SQL
+DELETE FROM relation
+```
+
+To [drop](https://en.wikipedia.org/wiki/Data_definition_language#DROP_statement) an entire table:
+```SQL
+DROP TABLE relation
+```
+
+Now, you should understand the dilemma presented within the XKCD comic above. The school's data must live on a SQL database, and inserting the child's name `DROP TABLE students;` has caused the entire table containing (presumably) student data to be lost!
 
 ### Try it Out!
 
