@@ -16,7 +16,9 @@ _Example of table, featuring records, attributes, and a relation. ([Reproduction
 
 ### Syntax
 
-Using the terms from the above table, generally SQL statements [follow](https://en.wikipedia.org/wiki/SQL_syntax) a `SELECT/INSERT/UPDATE/DELETE ... records ... FROM/INTO/SET ... relation ... VALUES/WHERE ... attributes ...` format. Let's break this apart into four of the common SQL operations:
+Using the terms from the above table, generally SQL statements follow a `SELECT/INSERT/UPDATE/DELETE ... records ... FROM/INTO/SET ... relation ... VALUES/WHERE ... attributes ...` [format](https://en.wikipedia.org/wiki/SQL_syntax). 
+
+Let's break this apart further into four of the common SQL operations:
 
 #### [SELECT](https://en.wikipedia.org/wiki/Select_(SQL))
 
