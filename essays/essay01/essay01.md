@@ -44,8 +44,8 @@ SELECT * FROM relation WHERE index = 1
 
 There are many additional optional clauses one can specify to further limit, aggregate or sort the results of a SELECT. Some of these include:
 
-- GROUP BY: aggregate results by a attribute of your records (e.g. group all sales belonging to a single department)
-- [HAVING](https://en.wikipedia.org/wiki/Having_(SQL)): essentially a WHERE clause applied to groups (e.g. filter all sales belonging to a single department, which exceeds $1,000)
+- GROUP BY: aggregate results by a particular attribute of your records (e.g. group all sales belonging to a single department)
+- [HAVING](https://en.wikipedia.org/wiki/Having_(SQL)): essentially a WHERE clause applied to groups (e.g. filter all sales belonging to a single department which exceed $1,000)
 - [ORDER BY](https://en.wikipedia.org/wiki/Order_by): sort results (in ascending order, by default) based on a specific attribute (e.g. return sales sorted by transaction date)
 
 These clauses can be particularly helpful when using [aggregate functions](https://en.wikipedia.org/wiki/Aggregate_function).
