@@ -8,17 +8,22 @@ SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a lang
 
 ### Database Design
 
-[Relational databases](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations").
-
 <img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database">
 
-_Example of table, featuring records, attributes, and a relation. ([Reproduction from Wikipedia](https://en.wikipedia.org/wiki/Relational_database))_
+_Example of [relational database](https://en.wikipedia.org/wiki/Relational_database)_
+
+Relational databases are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). 
 
 ### Syntax
 
-Using the terms from the above table, generally SQL statements follow a `SELECT/INSERT/UPDATE/DELETE ... records ... FROM/INTO/SET ... relation ... VALUES/WHERE ... attributes ...` [format](https://en.wikipedia.org/wiki/SQL_syntax). 
+Using the terms from the above table, generally SQL statements follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
+```
+SELECT/INSERT/UPDATE/DELETE ... records ... 
+	FROM/INTO/SET ... relation ... 
+	VALUES/WHERE ... attributes ...
+``` 
 
-Let's break this apart further into four of the common SQL operations:
+Let's take a deeper dive into four of the common SQL operations:
 
 #### [SELECT](https://en.wikipedia.org/wiki/Select_(SQL))
 
