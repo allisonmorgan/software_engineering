@@ -11,10 +11,10 @@ And even though, it is [almost 50 years old](https://dl.acm.org/citation.cfm?doi
 <!--img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database"-->
 
 [Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). Using the language of records, attributes, and relations, operations on relational databases using SQL statements generally follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
-```{sql}
-SELECT/INSERT/UPDATE/DELETE ... records ... 
-	FROM/INTO/SET ... relation ... 
-	VALUES/WHERE ... attributes ...
+```SQL
+<SELECT/INSERT/UPDATE/DELETE> ... records ... 
+	<FROM/INTO/SET> ... relation ... 
+	<VALUES/WHERE> ... attributes ...
 ``` 
 
 Let's take a deeper dive into four of the common SQL operations:
@@ -34,7 +34,7 @@ There are several ways to get started learning and using SQL. The Wikipedia link
 If you'd like to dive deeper, you can install your own SQL server locally. A popular relational database is [MySQL](https://www.mysql.com). If you'd rather test SQL out further before installing, Google and Wikipedia host public databases, which you can query using SQL statements. 
 
 - [Google BigQuery](https://cloud.google.com/bigquery/public-data/): Tutorial for [querying Wikipedia data](https://codelabs.developers.google.com/codelabs/cloud-bigquery-wikipedia/index.html?index=..%2F..%2Findex#0), and [analyzing Github data](https://medium.com/google-cloud/github-on-bigquery-analyze-all-the-code-b3576fd2b150)
-- [Wikipedia](https://wikitech.wikimedia.org/wiki/PAWS): [Example](https://github.com/brianckeegan/INFO-3501-5501/blob/master/Lab%201/Lab%201%20-%20Revision%20Histories.ipynb) from Brian Keegan
+- [Wikipedia](https://wikitech.wikimedia.org/wiki/PAWS): [Example](https://github.com/brianckeegan/INFO-3501-5501/blob/master/Lab%201/Lab%201%20-%20Revision%20Histories.ipynb) from Brian Keegan's ["Peer Production and Crowdsourcing"](https://github.com/brianckeegan/INFO-3501-5501) course
 
 ---
 
