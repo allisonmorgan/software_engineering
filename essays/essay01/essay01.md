@@ -1,16 +1,15 @@
-# SQL: Overview
+# SQL
 
 ![Comic](https://imgs.xkcd.com/comics/exploits_of_a_mom.png "Her daughter is named Help I'm trapped in a driver's license factory.")
 
 _XKCD comic featuring SQL humor. Hopefully, by the end of this essay, you will understand the joke! ([Link](https://xkcd.com/327/))_
 
-SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a language for querying, manipulating, inserting, and deleting data within relational databases. 
-And even though, it is [almost 50 years old](https://dl.acm.org/citation.cfm?doid=362384.362685), [many relational database systems](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) still used today, handle interactions through SQL statements. In the SQL commands below, I will show how SQL can be used on large data sets, to both aggregate features of several rows, and look at single rows in detail. 
+SQL (["Structured Query Language"](https://en.wikipedia.org/wiki/SQL)) is a language for querying, manipulating, inserting, and deleting data within relational databases. Even though, SQL is [almost 50 years old](https://dl.acm.org/citation.cfm?doid=362384.362685), [many relational database systems](https://en.wikipedia.org/wiki/List_of_relational_database_management_systems) still used today, handle interactions through SQL statements. In the sections below, I will show how SQL can be used on large data sets, to both aggregate features of several rows, and look at single rows in detail. 
 
 ### Syntax
 <!--img src="https://user-images.githubusercontent.com/6633242/35548378-3f09f0be-053c-11e8-9473-cad2b033350d.png" width="70%" title="Example Database"-->
 
-[Relational database](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). Using the language of records, attributes, and relations, operations on relational databases using SQL statements generally follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
+[Relational databases](https://en.wikipedia.org/wiki/Relational_database) are those in which rows ("records") that contain common columns ("attributes") are stored within tables ("relations"). Using the language of records, attributes, and relations, operations on relational databases using SQL statements generally follow a [format](https://en.wikipedia.org/wiki/SQL_syntax) that looks something like:
 ```SQL
 <SELECT/INSERT/UPDATE/DELETE> ... records ... 
 	<FROM/INTO/SET> ... relation ... 
@@ -41,9 +40,9 @@ If you'd like to examine a single record (here, the first), with all of its attr
 ```SQL
 SELECT * FROM relation WHERE index = 1
 ```
-(There are [many other operators](https://en.wikipedia.org/wiki/SQL_syntax#Operators) that can be used within SQL statements.)
+(There are [many other operators](https://en.wikipedia.org/wiki/SQL_syntax#Operators), like `=`, that can be used within SQL statements.)
 
-There are many additional optional clauses one can specify to further limit, aggregate or sort the results of a SELECT. Some of these include:
+There are also many additional optional clauses one can specify to further limit, aggregate or sort the results of a SELECT. Some of these include:
 
 - GROUP BY: aggregate results by a particular attribute of your records (e.g. group all sales belonging to a single department)
 - [HAVING](https://en.wikipedia.org/wiki/Having_(SQL)): essentially a WHERE clause applied to groups (e.g. filter all sales belonging to a single department which exceed $1,000)
@@ -51,15 +50,15 @@ There are many additional optional clauses one can specify to further limit, agg
 
 These clauses can be particularly helpful when using [aggregate functions](https://en.wikipedia.org/wiki/Aggregate_function).
 
-Hopefully, after just this discussion of SQL's SELECT statement, I have conveyed some of the power behind SQL - its ability to both generate detailed views of single records, and build summary statistics for a dataset. 
+Hopefully, after just this discussion of SQL's SELECT statement, I have conveyed some of the power behind SQL - primarily, its ability to generate both detailed views of single records, and summary statistics for a dataset. 
 
 #### [INSERT](https://en.wikipedia.org/wiki/Insert_(SQL))
 
-To insert a new record into an existing table (`relation`), you can use an INSERT statement. Consider a table which has two columns, `attribute_1` and `attribute_2`, the statement:
+To insert a new record into an existing table (`relation`), you can use an INSERT statement. Consider a table which has two columns, `attribute_1` and `attribute_2`. The statement:
 ```SQL
 INSERT INTO relation (attribute_1, attribute_2) VALUES (2, 'red')
 ```
-will insert a new record into the table `relation`, with those specified attributes. If I had not specified attribute names above, then the values provided would have matched to the first two attributes of my table `relation`, by default.
+will insert a new record into the table `relation`, with those specified attributes. If you do not specify the attribute names above, then the values provided will match to the first two attributes of the table `relation`, by default.
 
 To insert more than one record at once:
 ```SQL
@@ -82,7 +81,9 @@ To drop a single record from a table:
 DELETE FROM relation WHERE attribute_1 = 3
 ```
 
-Similar filters can be applied from the SELECT statements above (like WHERE) to drop more than one record. Furthermore, to drop all records from a table:
+Note how, similar filters can be applied from the SELECT statements above (like WHERE) to drop more than one record. 
+
+Furthermore, to drop all records from a table:
 ```SQL
 DELETE FROM relation
 ```
@@ -92,11 +93,11 @@ To [drop](https://en.wikipedia.org/wiki/Data_definition_language#DROP_statement)
 DROP TABLE relation
 ```
 
-Now, you should understand the dilemma presented within the XKCD comic above. The school's data must live on a SQL database, and inserting the child's name `DROP TABLE students;` has caused the entire table containing (presumably) student data to be lost!
+Now, you should understand the dilemma presented within the XKCD comic above. The school's data must be stored on a relational database, accessible via SQL. Inserting the child's name `DROP TABLE students;` has caused the entire table of student data to be lost!
 
 ### Try it Out!
 
-There are several ways to get started learning and using SQL. The Wikipedia links that I've provided above can be a helpful to understand the basics of relational databases and SQL syntax. And below, I have provided references for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
+There are several ways to get started learning and using SQL. The Wikipedia links that I've provided above can be helpful for understanding the basics of relational databases and SQL syntax. And below, I have provided references for online courses in SQL, as well as O'Reilly textbooks on the subject. (Some of these can be found online through the [University of Colorado Library](http://ucblibraries.summon.serialssolutions.com/search?formids=target&lang=eng&suite=def&reservedids=lang%2Csuite&submitmode=&submitname=&s.q=oreilly#!/search?ho=t&l=en&q=(%22SQL%22)%20AND%20(Publisher:(OReilly)))).
 
 If you'd like to dive deeper, you can install your own SQL server locally. A popular relational database is [MySQL](https://www.mysql.com). If you'd rather test SQL out further before installing, Google and Wikipedia host public databases, which you can query using SQL statements. 
 
