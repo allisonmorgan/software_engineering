@@ -18,7 +18,7 @@ In his model, Raymond contrasts two different open source software models. From 
 
 Raymond argues that the Cathedral model is more typical of traditional software, centralized with well-defined roles among developers. He argues that Bazaar is the faster model of development. The latter has inspired the development model of [Wikipedia](https://www.newyorker.com/magazine/2006/07/31/know-it-all). (More features of this Bazaar model can be found [here](https://en.wikipedia.org/wiki/Open-source_software#Development_model).)
 
-### Why Might You Want to Choose and Open Source License?
+### Why Choose an Open Source License?
 
 By specifying an open source license, you allow developers to use, modify or share your code, while still retaining certain copyright permissions. By providing no license, you retain the [exclusive copyright](https://choosealicense.com/no-permission/) of the work, and disallow others from contributing. 
 
