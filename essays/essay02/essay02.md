@@ -41,7 +41,7 @@ Here, I will highlight a few of the popular license options: (1) MIT License, (2
 > Permissions of this strong copyleft license are conditioned on making available complete source code of licensed works and modifications, which include larger works using a licensed work, under the same license. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights.
 
 
-I'd encourage you to puruse [choosealicense.org](https://choosealicense.com) to find the appropriate license for your project.
+I'd encourage you to peruse [choosealicense.org](https://choosealicense.com) to find the appropriate license for your project.
 
 ### Adding an Open Source License to your Github Project
 
