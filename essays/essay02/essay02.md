@@ -52,4 +52,6 @@ Once you have chosen an open source license, it's very easy to add a license to 
 - Comparison Tools: 
 	- [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses)
 	- [choosealicense.com](https://choosealicense.com) 
-	- [Open Source Iniative](https://opensource.org/licenses)
+	- [Open Source Initiative](https://opensource.org/licenses)
+
+Author: Allie Morgan (allison.morgan@colorado.edu)
