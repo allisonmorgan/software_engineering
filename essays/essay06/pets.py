@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import requests
 import re
 import json
+import time
 
 #
 pet_types = ['dogs', 'cats', 'small_animals']
@@ -20,6 +21,8 @@ zoo = {}
 
 # Request all of the pages
 for i, pet_page in enumerate(pet_pages):
+	if i > 0: time.sleep(10) # From the site's robots.txt file
+
 	try:
 		r = requests.get(pet_page)
 	except:

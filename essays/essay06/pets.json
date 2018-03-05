@@ -9,34 +9,10 @@
             ]
         }, 
         {
-            "age": "0 years 11 months", 
-            "name": "Frodo", 
-            "breeds": [
-                "Domestic Shorthair", 
-                ""
-            ]
-        }, 
-        {
             "age": "1 year 1 month", 
             "name": "Meadow", 
             "breeds": [
                 "Domestic Shorthair", 
-                ""
-            ]
-        }, 
-        {
-            "age": "10 years 0 months", 
-            "name": "Gracie", 
-            "breeds": [
-                "Domestic Shorthair", 
-                ""
-            ]
-        }, 
-        {
-            "age": "4 years 0 months", 
-            "name": "Kota", 
-            "breeds": [
-                "Domestic Longhair", 
                 ""
             ]
         }, 
@@ -59,14 +35,6 @@
         {
             "age": "0 years 10 months", 
             "name": "Figaro", 
-            "breeds": [
-                "Domestic Shorthair", 
-                ""
-            ]
-        }, 
-        {
-            "age": "1 year 6 months", 
-            "name": "Neville", 
             "breeds": [
                 "Domestic Shorthair", 
                 ""
@@ -103,6 +71,14 @@
                 "Domestic Shorthair", 
                 ""
             ]
+        }, 
+        {
+            "age": "1 year 0 months", 
+            "name": "Merlin", 
+            "breeds": [
+                "Domestic Medium Hair", 
+                ""
+            ]
         }
     ], 
     "dogs": [
@@ -117,14 +93,6 @@
         {
             "age": "4 years 1 month", 
             "name": "Anne", 
-            "breeds": [
-                "Boxer", 
-                "Mix"
-            ]
-        }, 
-        {
-            "age": "0 years 2 months", 
-            "name": "Hank", 
             "breeds": [
                 "Boxer", 
                 "Mix"
@@ -208,6 +176,14 @@
             "breeds": [
                 "Retriever, Labrador", 
                 "Boxer"
+            ]
+        }, 
+        {
+            "age": "2 years 1 month", 
+            "name": "Cody", 
+            "breeds": [
+                "Siberian Husky", 
+                ""
             ]
         }
     ], 
