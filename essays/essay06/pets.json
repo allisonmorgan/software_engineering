@@ -1,0 +1,240 @@
+{
+    "cats": [
+        {
+            "age": "11 years 8 months", 
+            "name": "Sugar Plum", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "0 years 11 months", 
+            "name": "Frodo", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "1 year 1 month", 
+            "name": "Meadow", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "10 years 0 months", 
+            "name": "Gracie", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "4 years 0 months", 
+            "name": "Kota", 
+            "breeds": [
+                "Domestic Longhair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "6 years 0 months", 
+            "name": "Grandpaw", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "6 years 0 months", 
+            "name": "Fiona", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "0 years 10 months", 
+            "name": "Figaro", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "1 year 6 months", 
+            "name": "Neville", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "5 years 2 months", 
+            "name": "Little Kitty", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "11 years 0 months", 
+            "name": "Hermione", 
+            "breeds": [
+                "Domestic Longhair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "3 years 0 months", 
+            "name": "Neptune", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }, 
+        {
+            "age": "8 years 0 months", 
+            "name": "Ernie", 
+            "breeds": [
+                "Domestic Shorthair", 
+                ""
+            ]
+        }
+    ], 
+    "dogs": [
+        {
+            "age": "9 years 3 months", 
+            "name": "Otis", 
+            "breeds": [
+                "Terrier, American Pit Bull", 
+                ""
+            ]
+        }, 
+        {
+            "age": "4 years 1 month", 
+            "name": "Anne", 
+            "breeds": [
+                "Boxer", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "0 years 2 months", 
+            "name": "Hank", 
+            "breeds": [
+                "Boxer", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "1 year 2 months", 
+            "name": "Daisy", 
+            "breeds": [
+                "Terrier, American Pit Bull", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "3 years 1 month", 
+            "name": "Marjorie", 
+            "breeds": [
+                "Coonhound, Black and Tan", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "2 years 0 months", 
+            "name": "Tiger", 
+            "breeds": [
+                "Terrier, American Pit Bull", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "2 years 0 months", 
+            "name": "Diego", 
+            "breeds": [
+                "Terrier, American Pit Bull", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "1 year 3 months", 
+            "name": "Moki", 
+            "breeds": [
+                "Terrier, American Pit Bull", 
+                "Australian Cattle Dog"
+            ]
+        }, 
+        {
+            "age": "1 year 0 months", 
+            "name": "Cody", 
+            "breeds": [
+                "Retriever, Labrador", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "4 years 0 months", 
+            "name": "Koa", 
+            "breeds": [
+                "Terrier, American Staffordshire", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "2 years 0 months", 
+            "name": "Susan", 
+            "breeds": [
+                "Retriever, Labrador", 
+                "Mix"
+            ]
+        }, 
+        {
+            "age": "3 years 11 months", 
+            "name": "Mushu", 
+            "breeds": [
+                "Shih Tzu", 
+                ""
+            ]
+        }, 
+        {
+            "age": "0 years 9 months", 
+            "name": "Ricky", 
+            "breeds": [
+                "Retriever, Labrador", 
+                "Boxer"
+            ]
+        }
+    ], 
+    "small_animals": [
+        {
+            "age": "0 years 2 months", 
+            "name": "Romeo", 
+            "breeds": [
+                "New Zealand", 
+                "Rabbit"
+            ]
+        }, 
+        {
+            "age": "0 years 2 months", 
+            "name": "Juliet", 
+            "breeds": [
+                "New Zealand", 
+                "Rabbit"
+            ]
+        }, 
+        {
+            "age": "1 year 0 months", 
+            "name": "Mistletoe", 
+            "breeds": [
+                "Parakeet (Other)", 
+                ""
+            ]
+        }
+    ]
+}
