@@ -1,3 +1,5 @@
+# Apache Nutch
+
 [Apache Nutch](http://nutch.apache.org) is an open source, web crawler written in Java. It boasts scalable performance on distributed computing environments, while still being quite feature-rich. In the following essay, I will briefly define a web crawler, then highlight some of the features of Apache Nutch, and conclude by describing how you can start using Apache Nutch.
 
 ### Web Crawling
