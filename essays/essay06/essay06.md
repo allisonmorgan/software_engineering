@@ -104,3 +104,5 @@ You'll also like to have a Python package for carrying out HTTP requests (such a
 ### References
 - [BeautifulSoup Homepage](https://www.crummy.com/software/BeautifulSoup/)
 - [BeautifulSoup Documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+Author: Allie Morgan (allison.morgan@colorado.edu)

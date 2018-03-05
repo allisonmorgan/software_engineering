@@ -45,3 +45,5 @@ As we have been talking about in class, concurrency is important for the efficie
 - More information about the [cute gopher mascot](https://blog.golang.org/gopher)
 - [Wikipedia entry](https://en.wikipedia.org/wiki/Go_(programming_language)) for Go
 - [Tour of Go](https://tour.golang.org/welcome/1), [Sandbox](https://play.golang.org)
+
+Author: Allie Morgan (allison.morgan@colorado.edu)

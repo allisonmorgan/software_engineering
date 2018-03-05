@@ -37,3 +37,5 @@ Nutch has a [nice tutorial](https://wiki.apache.org/nutch/NutchTutorial) for how
 	- [Wikipedia](https://en.wikipedia.org/wiki/Apache_Nutch)
 	- ["About" section](https://wiki.apache.org/nutch/FrontPage#What_is_Apache_Nutch.3F) of Apache Nutch's documentation.
 	- Detailed [Documentation](http://nutch.apache.org/apidocs/apidocs-1.14/index.html)
+
+Author: Allie Morgan (allison.morgan@colorado.edu)
