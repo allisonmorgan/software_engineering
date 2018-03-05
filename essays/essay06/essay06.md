@@ -28,6 +28,16 @@ BeautifulSoup is a Python library for parsing HTML and allowing for easy travers
 
 Say I wanted to know all of the names, ages, and breeds of the [dogs](https://www.boulderhumane.org/animals/adoption/dogs), [cats](https://www.boulderhumane.org/animals/adoption/cats) and [small animals](https://www.boulderhumane.org/animals/adoption/adopt_other) currently up for adoption at the Boulder Humane Society. I could write a Python script to request these pages and parse them using BeautifulSoup!
 
+First we'll need to request the HTML for a page, and parse the HTML using BeautifulSoup as so:
+```python
+from bs4 import BeautifulSoup
+import requests 				# For doing HTTP requests
+
+r = requests.get(pet_page)
+html = r.text
+soup = BeautifulSoup(html, 'html.parser')
+```
+
 Note, that the feature of these pages which we are exploiting is the repeated similar HTML structure. Every animal listed has the following HTML variant:
 
 ```html
@@ -56,9 +66,40 @@ Note, that the feature of these pages which we are exploiting is the repeated si
 </div>
 ```
 
+So to get at the HTML object for each pet, we can run:
+
+```python
+pets = soup.find_all('div', {'class': re.compile('.*views-row views-row-.*')})
+``` 
+
+that is, find all of the `div` tags with the `class` attribute which contains the string "views-row views-row".
+
+Next to grab the name, breeds, and ages of these pets, we'll grab the children of each pet HTML object. For example 
+
+```python
+for pet in pets:
+	
+	name = pet.find('div', {'class': 'views-field views-field-field-pp-animalname'}).get_text(strip=True)
+	primary_breed = pet.find('div', {'class': 'views-field views-field-field-pp-primarybreed'}).get_text(strip=True)
+	secondary_breed = pet.find('div', {'class': 'views-field views-field-field-pp-secondarybreed'}).get_text(strip=True)
+	age = pet.find('div', {'class': 'views-field views-field-field-pp-age'}).get_text(strip=True)
+
+	print(name, primary_breed, secondary_breed, age)
+``` 
+
+where each call to `find` is finding the children of a pet object, in particular, the `div`s with `class` attributes which look like `views-field views-field-field-pp-*`. The full code, which produces a [JSON file](https://github.com/allisonmorgan/software_engineering/blob/master/essays/essay06/pets.json) of all the pets, can be found [here](https://github.com/allisonmorgan/software_engineering/blob/master/essays/essay06/pets.py).
+
+There is a lot of capabilities beyond `find`, `find_all`, and `get_text` which I have shown above. To learn more, BeautifulSoup has quite thorough [documentation](https://www.crummy.com/software/BeautifulSoup/bs4/doc/).
 
 ### Getting Started
 
+If you are a Python user, and would like to get started using BeautifulSoup, you can use `pip`:
+
+```bash
+ pip install beautifulsoup4
+```
+
+You'll also like to have a Python package for carrying out HTTP requests (such as [urllib2](https://docs.python.org/2/library/urllib2.html) or [requests](http://docs.python-requests.org/en/master/)).
 
 ### References
 - [BeautifulSoup Homepage](https://www.crummy.com/software/BeautifulSoup/)
