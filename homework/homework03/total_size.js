@@ -1,8 +1,9 @@
 var fs = require('fs');
+// var sleep = require('sleep');
 var filepath = process.argv[2];
 
 if (!filepath) {
-  throw Error('Error: No filename specified.');
+  return console.error('Error: No filename specified.');
 }
 
 function addFilePath(filepath) {
@@ -21,7 +22,9 @@ var handleFile = function(stats, i, filenames, total) {
 
 var handleDir = function(i, filenames, total) {
   fs.readdir(filenames[i], function(err, subfilenames) {
-    if (err) throw err;
+    if (err) {
+      return console.error('Error: %s', err);
+    }
 
     if (subfilenames.length == 0) { 
       // if there are no files in this directory, then continue to the next entry
@@ -33,6 +36,7 @@ var handleDir = function(i, filenames, total) {
       var subfilenames = filenames.concat(subfilepaths)
 
       // pass along this bigger list, and proceed to the next entry
+      // sleep.sleep(1);
       processFile(i+1, subfilenames, total);
     }
   });
@@ -42,15 +46,25 @@ var processFile = function(i, filenames, total) {
   // while there are still entries to loop through
   if (i < filenames.length) {
     var name = filenames[i];
-    console.log(name, Date.now());
-    fs.stat(name, function(err, stats) {
-      if (err) throw err;
-      if (stats.isFile()) {
-        handleFile(stats, i, filenames, total);
-      } else {
-        handleDir(i, filenames, total);
-      }
-    });
+    // console.log(name, Date.now());
+    fs.exists(name, 
+      function(exists) {
+        if (exists == false) {
+          return console.error('Error: File does not exist - %s', name)
+        };
+
+        fs.stat(name, function(err, stats) {
+          if (err) {
+            return console.error('Error: %s', err);
+          }
+
+          if (stats.isFile()) {
+            handleFile(stats, i, filenames, total);
+          } else if (stats.isDirectory()) {
+            handleDir(i, filenames, total);
+          };
+        });
+      });
   } else { 
     // if we've found the last entry, then return the total size
     all_done(total)
@@ -58,7 +72,9 @@ var processFile = function(i, filenames, total) {
 }
 
 fs.readdir(filepath, function(err, filenames) {
-  if (err) throw err;
+  if (err) {
+    return console.error('Error: %s', err);
+  }
 
   // filenames is the list of files and folders in the directory provided
   var path = addFilePath(filepath);
