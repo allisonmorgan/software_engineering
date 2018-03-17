@@ -23,7 +23,7 @@ var handleFile = function(stats, i, filenames, total) {
 var handleDir = function(i, filenames, total) {
   fs.readdir(filenames[i], function(err, subfilenames) {
     if (err) {
-      return console.error('Error: %s', err);
+      return console.error('Error: Filepath does not exist - (%s, %s)', filenames[i], err);
     }
 
     if (subfilenames.length == 0) { 
@@ -73,7 +73,7 @@ var processFile = function(i, filenames, total) {
 
 fs.readdir(filepath, function(err, filenames) {
   if (err) {
-    return console.error('Error: %s', err);
+    return console.error('Error: Filepath does not exist - (%s, %s)', filepath, err);
   }
 
   // filenames is the list of files and folders in the directory provided
