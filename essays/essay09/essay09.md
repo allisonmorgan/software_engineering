@@ -16,6 +16,39 @@ The data format supports a limited number of data types:
 - Object: an unordered group of key-value pairs, where the keys are strings, keys and values are separated by colons, key-value pairs are delimited by commas, and the whole group is bounded by `{` and `}` 
 - `null`: an empty value
 
+Here's an `exmaple.json` from [Wikipedia](https://en.wikipedia.org/wiki/JSON#Data_types,_syntax_and_example):
+
+```{json}
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
+```
+
 ### Comparison with Other Data Formats
 
 ### References
